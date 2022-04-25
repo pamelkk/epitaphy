@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Epitaphy" />
+    <title>Epitaphy</title>
+    <link href="css/min.css" rel="stylesheet" />
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>
+</head>
+
+<body class="page-body">
+    <header class="header">
+        <nav class="header__nav">
+            <ul>
+                <li class="header__nav-item"><a href="#">О нас</a></li>
+                <li class="header__nav-item"><a href="#">Услуги</a></li>
+                <li class="header__nav-item"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <img src="img/icon-logo.png" width="152" height="35" alt="Наш логотип">
+        <div class="header__contacts">
+            <div>
+                <span>Москва</span>
+                <a href="tel:84954959595">Тел.: +7 (495) 161-73-37</a>
+            </div>
+            <button type="button">Перезвоните мне</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__header">
+            <div>
+                <h1>Закажите гравировку на памятник</h1>
+                <p>Введите для расчёта стоимости эпитафию, которую необходимо нанести на памятник</p>
+                <form action="#" method="get">
+                    <input type="text" id="second-name" name="second-name" placeholder="Фамилия">
+                    <label class="visually-hidden" for="second-name">Введите фамилию</label>
+                    <input type="text" id="name" name="name" placeholder="Имя">
+                    <label class="visually-hidden" for="name">Введите имя</label>
+                    <input type="text" id="surname" name="surname" placeholder="Отчество">
+                    <label class="visually-hidden" for="surname">Введите отчество</label>
+                    <input type="date" id="date" name="date" value="2018-07-22" min="1943-11-08" max="2020-10-10">
+                    <label class="visually-hidden" for="date">Введите даты рождения и смерти</label>
+                    <textarea name="inscription" id="inscription" rows="4">Надпись</textarea>
+                    <label class="visually-hidden" for="inscription">Введите надпись</label>
+                </form>
+            </div>
+            <img src="img/icon-form.svg" width="440" height="581" alt="Предпросмотр результата">
+            <ul class="main__header-result">
+                <li>
+                    <p>Фамилия </p>
+                </li>
+                <li>
+                    <p>Имя </p>
+                </li>
+                <li>
+                    <p>Отчество </p>
+                </li>
+                <li>
+                    <p>08.11.1943 - 10.10.2020 </p>
+                </li>
+                <li>
+                    <p>Надпись </p>
+                </li>
+            </ul>
+        </section>
+        <section class="main__calculation">
+            <h2 class="visually-hidden">Расчет стоимости</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Выберите место проведения работ</legend>
+                    <ul>
+                        <li><input type="radio" name="place" id="workshop" value="workshop" checked>
+                            <label for="workshop">На производстве в цеху (новый памятник)</label></li>
+                        <li><input type="radio" name="place" id="area" value="area">
+                            <label for="area">На участке захоронения</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Выберите метод нанесения гравировки</legend>
+                    <div>
+                        <ul>
+                            <li><input type="radio" name="methode" id="machine" value="machine" checked>
+                                <label for="machine">Гравировка ударным станком</label></li>
+                            <li><input type="radio" name="methode" id="sandblasting" value="sandblasting">
+                                <label for="sandblasting">Пескоструйным пистолетом</label></li>
+                            <li><input type="radio" name="methode" id="manually" value="manually">
+                                <label for="manually">Ручная гравировка</label></li>
+                            <li><input type="radio" name="methode" id="manually-machine" value="manually-machine">
+                                <label for="manually-machine">Ручная гравировка на УС</label></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>80 ₽/знак</li>
+                            <li>90 ₽/знак</li>
+                            <li>110 ₽/знак</li>
+                            <li>150 ₽/знак</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Смотреть видео</a></li>
+                            <li><a href="#">Смотреть видео</a></li>
+                            <li><a href="#">Смотреть видео</a></li>
+                            <li><a href="#">Смотреть видео</a></li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Выберите шрифт для нанесения новой гравировки</legend>
+                    <ul>
+                        <li><input type="radio" name="font" id="academ-standart" value="academ-standart" checked>
+                            <label for="academ-standart">Академ стандарт</label></li>
+                        <li><input type="radio" name="font" id="academ-bold" value="academ-bold">
+                            <label for="academ-bold">Академ жирный</label></li>
+                        <li><input type="radio" name="font" id="academ-art" value="academ-art">
+                            <label for="academ-art">Академ художественный</label></li>
+                        <li><input type="radio" name="font" id="italic" value="italic">
+                            <label for="italic">Прописной</label></li>
+                        <li><input type="radio" name="font" id="squared" value="squared">
+                            <label for="squared">Брусковый</label></li>
+                        <li><input type="radio" name="font" id="raised" value="raised">
+                            <label for="raised">Рельефный</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Выберите покрытие для нанесения гравировальной надписи</legend>
+                    <div>
+                        <p>Акриловая краска - 80 руб/знак:</p>
+                        <ul>
+                            <li><input type="radio" name="coating" id="white" value="white">
+                                <label for="white">Белая</label></li>
+                            <li><input type="radio" name="coating" id="black" value="black">
+                                <label for="black">Чёрная</label></li>
+                            <li><input type="radio" name="coating" id="silver" value="silver">
+                                <label for="silver">Серебристая</label></li>
+                            <li><input type="radio" name="coating" id="bronze" value="bronze">
+                                <label for="bronze">Бронзовая</label></li>
+                            <li><input type="radio" name="coating" id="gold" value="gold">
+                                <label for="gold">Золотая</label></li>
+                        </ul>
+                        <p>Сусальное покрытие - 250 руб/знак:</p>
+                        <ul>
+                            <li><input type="radio" name="leaf" id="silver-leaf" value="silver-leaf">
+                                <label for="silver-leaf">Серебро</label></li>
+                            <li><input type="radio" name="leaf" id="gold-leaf" value="gold-leaf">
+                                <label for="gold-leaf">Золото</label></li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Выберите вариант нанесения и размер портрета </legend>
+                    <ul>
+                        <li><input type="radio" name="drawing" id="engrave" value="engrave">
+                            <label for="engrave">Награвировать</label></li>
+                        <li><input type="radio" name="drawing" id="engrave-paint" value="engrave-paint">
+                            <label for="engrave-paint">Награвировать и покрыть краской</label></li>
+                        <li><input type="radio" name="drawing" id="without-portrait" value="without-portrait">
+                            <label for="without-portrait">Без портрета</label></li>
+                    </ul>
+                    <ul>
+                        <li><input type="radio" name="size" id="a5" value="a5">
+                            <label for="a5">А5</label></li>
+                        <li><input type="radio" name="size" id="a4" value="a4">
+                            <label for="a4">А4</label></li>
+                        <li><input type="radio" name="size" id="a3" value="a3">
+                            <label for="a3">А3</label></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
