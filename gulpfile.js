@@ -15,7 +15,6 @@ const posthtml = require('gulp-posthtml')
 const include = require('posthtml-include')
 const del = require('del')
 const sync = require('browser-sync').create()
-const jsmin = require('gulp-jsmin')
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
@@ -62,7 +61,6 @@ gulp.task('images', function () {
 
 gulp.task('js', function () {
   return gulp.src('source/js/*.js')
-    .pipe(jsmin())
     .pipe(gulp.dest('build/js'))
     .pipe(sync.stream())
 })

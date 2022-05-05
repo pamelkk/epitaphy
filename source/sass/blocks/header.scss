@@ -12,8 +12,8 @@
 .header {
   display: flex;
   max-width: 1200px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 112px;
+  padding-right: 112px;
   box-sizing: border-box;
   margin: 0 auto;
   justify-content: space-between;
@@ -120,8 +120,8 @@
 @media (max-width: $bp-960) {
   .header {
     max-width: 1024px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-bottom: 20px;
     justify-content: center;
     position: relative;
@@ -194,9 +194,9 @@
 
     button {
       background-image: url("../../img/icon-menu-opened.svg");
-      background-size: 22px 22px;
+      background-size: 22px 18px;
       width: 22px;
-      height: 22px;
+      height: 18px;
       background-repeat: no-repeat;
       border: none;
       background-color: transparent;
@@ -208,12 +208,23 @@
   .header {
     max-width: 640px;
     margin-bottom: 81px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
   
   .header__result {
     display: block;
+    background-image: url("../../img/icon-result-tab.svg");
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 87px;
+    right: 20px;
+    padding: 0;
   }
 }
 
@@ -230,6 +241,14 @@
     top: 30px;
     right: 30px;
   }
+
+  .header__result {
+    background-size: 34px 34px;
+    width: 34px;
+    height: 34px;
+    top: 64px;
+    right: 24px;
+  }
 }
 
 @media (max-width: $bp-320) {
@@ -240,5 +259,10 @@
   .header__tab {
     top: 30px;
     right: 28px;
+  }
+
+  .header__result {
+    top: 59px;
+    right: 22px;
   }
 }
