@@ -555,16 +555,25 @@
 }
 
 .main__header-result {
+  .main__header-result-wrapper-list {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   ul {
+    align-self: center;
     margin: 0;
     padding: 0;
-    position: absolute;
     list-style: none;
     display: flex;
     flex-direction: column;
     text-align: center;
-    top: 255px;
-    left: 150px;
+    max-width: 300px;
 
     p {
       font-weight: 400;
@@ -583,6 +592,7 @@
       font-size: 16px;
       line-height: 170%;
       color: $main-black;
+      max-width: 100%;
 
       &:last-of-type {
         font-size: 14px;

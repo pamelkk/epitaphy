@@ -37,38 +37,40 @@
                 <h1>Закажите гравировку на памятник</h1>
                 <p>Введите для расчёта стоимости эпитафию, которую необходимо нанести на памятник</p>
                 <form action="#" method="get">
-                    <input type="text" id="second-name" name="second-name" placeholder="Фамилия">
+                    <input type="text" id="second-name" name="second-name" placeholder="Фамилия" maxlength="18">
                     <label class="visually-hidden" for="second-name">Введите фамилию</label>
-                    <input type="text" id="name" name="name" placeholder="Имя">
+                    <input type="text" id="name" name="name" placeholder="Имя" maxlength="18">
                     <label class="visually-hidden" for="name">Введите имя</label>
-                    <input type="text" id="surname" name="surname" placeholder="Отчество">
+                    <input type="text" id="surname" name="surname" placeholder="Отчество" maxlength="18">
                     <label class="visually-hidden" for="surname">Введите отчество</label>
                     <input type="date" id="date" name="date" value="2018-07-22" min="1943-11-08" max="2020-10-10">
                     <label class="visually-hidden" for="date">Введите даты рождения и смерти</label>
-                    <textarea name="inscription" id="inscription" rows="4" placeholder="Надпись"></textarea>
+                    <textarea name="inscription" id="inscription" rows="4" placeholder="Надпись" maxlength="66"></textarea>
                     <label class="visually-hidden" for="inscription">Введите надпись</label>
                 </form>
             </div>
             <div class="main__header-result">
                 <div class="main__header-result-wrapper">
                     <img src="img/icon-form.svg" width="440" height="581" alt="Предпросмотр результата">
+                    <div class="main__header-result-wrapper-list">
                     <ul>
                         <li>
-                            <p>Фамилия </p>
+                            <p id="new-second-name">Фамилия</p>
                         </li>
                         <li>
-                            <p>Имя </p>
+                            <p id="new-name">Имя</p>
                         </li>
                         <li>
-                            <p>Отчество </p>
+                            <p id="new-surname">Отчество</p>
                         </li>
                         <li>
-                            <span>08.11.1943 - 10.10.2020 </span>
+                            <span>08.11.1943 - 10.10.2020</span>
                         </li>
                         <li>
-                            <span>Надпись </span>
+                            <span id="new-inscription">Надпись</span>
                         </li>
                     </ul>
+                </div>
                     <p class="main__header-result-wrapper-cost">0 ₽</p>
                     <button class="main__header-result-wrapper-tab" type="button" title="Закрыть меню"></button>
                 </div>

@@ -1,8 +1,1 @@
-<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="35" cy="35" r="34.5" fill="white" stroke="#82AEDB"/>
-<rect x="16.9705" y="49.9118" width="36.0588" height="7.23529" stroke="#82AEDB"/>
-<path d="M19.0295 24.7059C19.0295 15.8855 26.1798 8.73529 35.0001 8.73529C43.8204 8.73529 50.9707 15.8856 50.9707 24.7059V50.9706H19.0295V24.7059Z" stroke="#82AEDB"/>
-<circle cx="35.0002" cy="24.7059" r="5.67647" stroke="#82AEDB"/>
-<rect x="26.7654" y="35" width="16.4706" height="2.05882" fill="#82AEDB"/>
-<rect x="26.7654" y="39.1176" width="16.4706" height="2.05882" fill="#82AEDB"/>
-</svg>
+<svg width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="34.5" fill="#fff" stroke="#82AEDB"/><path stroke="#82AEDB" d="M16.971 49.912H53.03v7.235H16.971z"/><path d="M19.03 24.706c0-8.82 7.15-15.97 15.97-15.97s15.97 7.15 15.97 15.97V50.97H19.03V24.706z" stroke="#82AEDB"/><circle cx="35" cy="24.706" r="5.676" stroke="#82AEDB"/><path fill="#82AEDB" d="M26.765 35h16.471v2.059H26.765zm0 4.118h16.471v2.059H26.765z"/></svg>
